@@ -10,13 +10,9 @@ function calcularComision(numVentas, precioProducto) {
 }
 
 function calcular(){
-    let cmpSueldoBase = document.getElementById("txtSueldoBase");
-    let cmpVentas = document.getElementById("txtVentas");
-    let cmpPrecio = document.getElementById("txtPrecio");
-
-    let sueldoBase = parseFloat(cmpSueldoBase.value);
-    let ventas = parseFloat(cmpVentas.value);
-    let precio = parseFloat(cmpPrecio.value);
+    let sueldoBase = recuperarFloat("txtSueldoBase");
+    let ventas = recuperarFloat("txtVentas");
+    let precio = recuperarFloat("txtPrecio");
 
     let comision = calcularComision(ventas,precio);
 
