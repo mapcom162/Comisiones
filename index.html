@@ -28,7 +28,9 @@
         <input type="text" id="txtPrecio" onblur="validarCampo(this)">
         <span id="errorTxtPrecio" class="mensaje-error"></span>
 
-        <button id="btnCalcular" onclick="calcular()"> Calcular Comisión </button>
+        <button id="btnCalcular" onclick="calcular()" disabled>
+        Calcular Comisión
+        </button>
         <h2>Resultados</h2>
         <p>Salario Base: <span id="spSueldoBase"></span></p>
         <p>Comisión: <span id="spComision"></span></p>
